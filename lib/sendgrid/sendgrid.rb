@@ -15,7 +15,7 @@ module SendGrid
       auth = "Bearer #{api_key}"
       host ||= 'https://api.sendgrid.com'
 
-      super(auth: auth, host: host, request_headers: request_headers, version: version, impersonate_subuser: impersonate_subuser, http_options: http_options)
+      super(auth: auth, host: host, request_headers: request_headers, version: version, impersonate_subuser: impersonate_subuser, http_options: http_options, proxy_options: proxy_options)
     end
   end
 end
